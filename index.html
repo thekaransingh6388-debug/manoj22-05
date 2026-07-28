@@ -1,11 +1,200 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>PANKAJ BHARDWAJ | Stock Market Telegram Channel - Official</title>
-    
-    <!-- NEW Meta Pixel Code (Facebook Pixel) - UPDATED PIXEL ID: 1030582882726557 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Pankaj Bhardwaj - Way2Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cricket: {
+                            green: {
+                                400: '#4a7c2c',
+                                500: '#2d5016',
+                                600: '#1a3009',
+                            },
+                            red: {
+                                400: '#e63946',
+                                500: '#c8102e',
+                                600: '#a00d24',
+                            },
+                            gold: {
+                                400: '#ffd700',
+                                500: '#ffb700',
+                                600: '#ff9500',
+                            },
+                        },
+                    },
+                    boxShadow: {
+                        'stadium': '0 0 40px rgba(255, 215, 0, 0.3)',
+                        'ball': '0 0 20px rgba(200, 16, 46, 0.5)',
+                        'pitch': '0 0 30px rgba(74, 124, 44, 0.4)',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a1f0a 0%, #051005 50%, #0a1f0a 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            animation: floodlight 8s ease-in-out infinite;
+        }
+
+        @keyframes floodlight {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 0.9; }
+        }
+
+        .pitch-texture {
+            background:
+                linear-gradient(90deg, rgba(255, 255, 255, 0.1) 2px, transparent 1px),
+                linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-color: #000000;
+        }
+
+        .glass-card {
+            background: rgba(15, 30, 15, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(74, 124, 44, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(255, 215, 0, 0.5);
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
+        }
+
+        .profile-ring {
+            box-shadow:
+                0 0 0 4px rgba(74, 124, 44, 0.6),
+                0 0 0 8px rgba(255, 215, 0, 0.4),
+                0 0 30px rgba(255, 215, 0, 0.3);
+            animation: ringPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes ringPulse {
+            0%, 100% {
+                box-shadow:
+                    0 0 0 4px rgba(74, 124, 44, 0.6),
+                    0 0 0 8px rgba(255, 215, 0, 0.4),
+                    0 0 30px rgba(255, 215, 0, 0.3);
+            }
+            50% {
+                box-shadow:
+                    0 0 0 4px rgba(74, 124, 44, 0.8),
+                    0 0 0 8px rgba(255, 215, 0, 0.6),
+                    0 0 40px rgba(255, 215, 0, 0.5);
+            }
+        }
+
+        .stadium-glow {
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+            animation: stadiumPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes stadiumPulse {
+            0%, 100% { box-shadow: 0 0 40px rgba(255, 215, 0, 0.3); }
+            50% { box-shadow: 0 0 60px rgba(255, 215, 0, 0.5); }
+        }
+
+        .trophy-icon {
+            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6));
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #4a7c2c 0%, #2d5016 50%, #c8102e 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button.is-disabled {
+            pointer-events: none;
+            opacity: 0.85;
+        }
+
+        .stat-number {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        
+        .toast-msg {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #4a7c2c, #2d5016);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            z-index: 1000;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            white-space: nowrap;
+            font-family: monospace;
+        }
+        .toast-msg.show {
+            opacity: 1;
+        }
+        
+        .btn-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        
+        .btn-wrapper .cta-button {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+
+    <!-- ✅ NEW META PIXEL (ID: 3999841233657526) -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -15,690 +204,350 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        
-        // NEW PIXEL ID: 1030582882726557
-        fbq('init', '1030582882726557');
-        
-        // Track initial PageView with enhanced parameters
+        fbq('init', '3999841233657526');
         fbq('track', 'PageView', {
-            page_type: 'Telegram_Subscribe_Landing_Official',
+            page_type: 'Telegram_Join_Landing',
             creator: 'PANKAJ_BHARDWAJ',
             niche: 'Stock_Market_Options_Nifty_BankNifty',
-            theme: 'premium_dark_gold',
-            pixel_version: '2.0_new'
+            pixel_id: '3999841233657526'
         });
-        
-        // Custom landing visit event for funnel analysis
-        fbq('trackCustom', 'StockMarketLandingVisit', {
-            source: 'direct',
-            device: window.innerWidth > 768 ? 'desktop' : 'mobile',
-            timestamp: new Date().toISOString(),
-            pixel_id: '1030582882726557',
-            channel_link: 't.me/+oRJCDQyGLbk2Yzk1'
-        });
-        
-        console.log('✅ Facebook Pixel Initialized - NEW ID: 1030582882726557');
+        console.log('✅ NEW Pixel Initialized - ID: 3999841233657526');
     </script>
     <noscript>
         <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1030582882726557&ev=PageView&noscript=1"/>
+        src="https://www.facebook.com/tr?id=3999841233657526&ev=PageView&noscript=1"/>
     </noscript>
-    <!-- End Meta Pixel Code -->
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: radial-gradient(circle at 20% 30%, #0a0a0a, #030303);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Poppins', 'Roboto', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 16px;
-        }
-
-        /* premium card design */
-        .card {
-            max-width: 100%;
-            width: 100%;
-            background: rgba(17, 17, 17, 0.95);
-            backdrop-filter: blur(2px);
-            border-radius: 48px;
-            border: 1px solid rgba(255, 152, 0, 0.3);
-            box-shadow: 0 25px 45px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,152,0,0.1);
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .content {
-            padding: 28px 22px 38px;
-        }
-
-        /* logo + name section */
-        .channel-badge {
-            display: flex;
-            align-items: center;
-            gap: 18px;
-            margin-bottom: 28px;
-        }
-
-        .logo-circle {
-            width: 75px;
-            height: 75px;
-            border-radius: 50%;
-            overflow: hidden;
-            background: #1a1a1a;
-            border: 2.5px solid #ff9800;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-            flex-shrink: 0;
-        }
-
-        .logo-circle img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .channel-name h2 {
-            font-size: 1.7rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #ffffff, #ffcc80);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            letter-spacing: -0.3px;
-            line-height: 1.2;
-        }
-
-        .channel-name p {
-            color: #aaaaaa;
-            font-size: 0.75rem;
-            margin-top: 6px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .verified {
-            background: #ff980020;
-            padding: 3px 12px;
-            border-radius: 30px;
-            font-size: 0.65rem;
-            color: #ff9800;
-            font-weight: 700;
-        }
-
-        /* BUTTON - PREMIUM GOLD/ORANGE GRADIENT */
-        .join-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            width: 100%;
-            background: linear-gradient(135deg, #ff9800, #f57c00, #e65100);
-            border: none;
-            padding: 16px 14px;
-            font-size: 1.05rem;
-            font-weight: 800;
-            color: #ffffff;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 80px;
-            transition: all 0.25s ease;
-            box-shadow: 0 10px 22px rgba(255,152,0,0.35);
-            letter-spacing: 0.6px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .join-btn:hover {
-            background: linear-gradient(135deg, #ff9800, #ff6d00);
-            transform: translateY(-2px);
-            box-shadow: 0 18px 28px rgba(255,152,0,0.45);
-        }
-
-        .join-btn:active {
-            transform: translateY(1px);
-        }
-
-        /* top button spacing */
-        .top-button {
-            margin-bottom: 22px;
-        }
-
-        /* bottom button */
-        .bottom-button {
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-
-        .tagline {
-            background: rgba(255,152,0,0.08);
-            padding: 14px 18px;
-            border-radius: 28px;
-            margin: 20px 0 22px;
-            border-left: 5px solid #ff9800;
-            font-weight: 600;
-            color: #dddddd;
-            font-size: 0.85rem;
-            text-align: center;
-        }
-
-        /* Points section - enhanced */
-        .points-section {
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 32px;
-            padding: 22px 18px;
-            margin: 20px 0 0;
-            border: 1px solid rgba(255,152,0,0.25);
-        }
-
-        .points-section h3 {
-            color: #ff9800;
-            font-size: 1rem;
-            margin-bottom: 18px;
-            text-align: center;
-            letter-spacing: 0.5px;
-            font-weight: 800;
-        }
-
-        .point-item {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 16px;
-            padding: 4px 0;
-        }
-
-        .point-icon {
-            font-size: 24px;
-            min-width: 36px;
-        }
-
-        .point-text {
-            color: #ececec;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .point-text strong {
-            color: #ffb74d;
-            font-weight: 800;
-        }
-
-        .disclaimer {
-            background: rgba(255,152,0,0.12);
-            border-left: 4px solid #ff9800;
-            padding: 12px 14px;
-            margin-top: 20px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            color: #ffcc80;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        .trust-badge {
-            text-align: center;
-            font-size: 0.65rem;
-            color: #888888;
-            margin-top: 24px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        hr {
-            border-color: rgba(255,152,0,0.2);
-            margin: 22px 0 14px;
-        }
-
-        .footer-text {
-            text-align: center;
-            font-size: 0.65rem;
-            color: #555555;
-            margin-top: 10px;
-        }
-        
-        /* toast notification */
-        .toast-msg {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, #ff9800, #f57c00);
-            color: #000000;
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-size: 13px;
-            font-weight: 700;
-            z-index: 1000;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none;
-            white-space: nowrap;
-            letter-spacing: 0.3px;
-        }
-        .toast-msg.show {
-            opacity: 1;
-        }
-
-        @media (max-width: 480px) {
-            .content {
-                padding: 22px 18px 32px;
-            }
-            .channel-name h2 {
-                font-size: 1.5rem;
-            }
-            .logo-circle {
-                width: 65px;
-                height: 65px;
-            }
-            .join-btn {
-                padding: 14px 12px;
-                font-size: 0.95rem;
-                gap: 8px;
-            }
-            .point-text {
-                font-size: 0.82rem;
-            }
-            .tagline {
-                font-size: 0.78rem;
-            }
-            .toast-msg {
-                font-size: 11px;
-                white-space: nowrap;
-                bottom: 18px;
-            }
-        }
-
-        @media (min-width: 500px) {
-            .card {
-                max-width: 470px;
-            }
-        }
-    </style>
+    <!-- END NEW META PIXEL -->
 </head>
-<body>
-
-<div class="card">
-    <div class="content">
-        <!-- Logo + Channel Name -->
-        <div class="channel-badge">
-            <div class="logo-circle">
-                <img src="https://karanmetalabe.com/wp-content/uploads/2025/11/download-9.jpg" alt="PANKAJ BHARDWAJ">
+<body class="text-white flex items-center justify-center p-4 pitch-texture">
+    <!-- Toast notification -->
+    <div id="trackingToast" class="toast-msg">✅ Event tracked! Redirecting...</div>
+    
+    <div class="container max-w-md mx-auto relative z-10">
+        <!-- Profile Section -->
+        <div class="flex flex-col items-center mb-6 pt-6">
+            <div class="profile-ring rounded-full p-1 mb-4">
+                <img src="https://karanmetalabe.com/wp-content/uploads/2025/11/download-9.jpg" alt="Pankaj Bhardwaj" class="w-28 h-28 rounded-full object-cover border-4 border-cricket-green-600" onerror="this.src='https://placehold.co/100x100/0B2B5E/white?text=PB'">
             </div>
-            <div class="channel-name">
-                <h2>PANKAJ BHARDWAJ</h2>
-                <p>📈 Stock Market & Options Specialist <span class="verified">✓ OFFICIAL TG</span></p>
+            <h1 class="text-3xl font-bold mb-1 text-cricket-gold-400 text-center" style="font-family: 'Rajdhani', sans-serif; text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);">
+                PANKAJ BHARDWAJ
+            </h1>
+            <p class="text-sm text-gray-300 mb-3 text-center">Stock Market Execution Expert &amp; Index Expert</p>
+            <div class="flex items-center text-cricket-gold-400 mb-2">
+                <i data-feather="users" class="w-5 h-5 mr-2"></i>
+                <span class="font-semibold">63K+ Traders Community</span>
+            </div>
+            <div class="flex items-center gap-2 flex-wrap justify-center">
+                <span class="px-3 py-1 bg-cricket-green-500/30 rounded-full text-xs border border-cricket-gold-400/30">
+                    🎯 Capital Protection First
+                </span>
+                <span class="px-3 py-1 bg-cricket-red-500/30 rounded-full text-xs border border-cricket-gold-400/30">
+                    📊 Rule-Based Trading
+                </span>
             </div>
         </div>
 
-        <!-- ✅ BUTTON 1 - TOP (JOIN TELEGRAM) - NEW UPDATED LINK -->
-        <div class="top-button">
-            <a href="https://t.me/+oRJCDQyGLbk2Yzk1" target="_blank" rel="noopener noreferrer" class="join-btn" id="subscribeTopBtn">
-                🔥 JOIN TELEGRAM CHANNEL 🔥
+        <!-- ✅ BUTTON 1 - TOP (JOIN TG) -->
+        <div class="mb-6">
+            <a href="https://t.me/+oRJCDQyGLbk2Yzk1" id="telegramCTA1" class="cta-button text-white font-bold py-5 px-6 rounded-xl transition-all duration-300 no-underline relative overflow-hidden stadium-glow flex items-center justify-center w-full" target="_blank" rel="noopener noreferrer">
+                <i data-feather="send" class="w-6 h-6 mr-3"></i>
+                <span class="text-lg">🚀 Join Free Telegram Now</span>
             </a>
         </div>
 
-        <div class="tagline">
-            🎯 NIFTY • BANKNIFTY • STOCK OPTIONS | Live Signals with 80-90% Accuracy 🎯
-        </div>
-
-        <!-- Premium Points Section -->
-        <div class="points-section">
-            <h3>⚡ NIFTY • BANKNIFTY • STOCK OPTIONS ⚡</h3>
-            
-            <div class="point-item">
-                <span class="point-icon">📈</span>
-                <span class="point-text"><strong>✅ Get up to 100-300 Points Daily</strong></span>
+        <!-- Stats Section -->
+        <div class="grid grid-cols-3 gap-3 mb-6">
+            <div class="glass-card rounded-xl p-4 text-center border-2 border-cricket-green-500/30 hover:border-cricket-gold-400/50">
+                <div class="text-cricket-gold-400 font-bold text-2xl mb-1 stat-number">15Y+</div>
+                <div class="text-xs text-gray-300 font-medium">Market Experience</div>
             </div>
-            
-            <div class="point-item">
-                <span class="point-icon">🎯</span>
-                <span class="point-text"><strong>✅ 80-90% Accuracy Rate</strong></span>
+            <div class="glass-card rounded-xl p-4 text-center border-2 border-cricket-red-500/30 hover:border-cricket-gold-400/50">
+                <div class="text-cricket-red-400 font-bold text-2xl mb-1 stat-number">35K+</div>
+                <div class="text-xs text-gray-300 font-medium">Community Members</div>
             </div>
-            
-            <div class="point-item">
-                <span class="point-icon">📞</span>
-                <span class="point-text"><strong>✅ 3-4 Observational Calls Everyday</strong></span>
-            </div>
-            
-            <div class="point-item">
-                <span class="point-icon">🏆</span>
-                <span class="point-text"><strong>✅ 3 Best Trades for Everyone</strong></span>
-            </div>
-            
-            <div class="point-item">
-                <span class="point-icon">🎙️</span>
-                <span class="point-text"><strong>✅ Live Market Analysis + Option Buying Tips</strong></span>
-            </div>
-            
-            <div class="disclaimer">
-                ⚡ DISCLAIMER : DAILY FREE DEMO CALL ✅ | 100% TRANSPARENT SIGNALS
+            <div class="glass-card rounded-xl p-4 text-center border-2 border-cricket-green-500/30 hover:border-cricket-gold-400/50">
+                <div class="text-cricket-gold-400 font-bold text-2xl mb-1 stat-number">FREE</div>
+                <div class="text-xs text-gray-300 font-medium">Online Classes</div>
+                <div class="text-xs text-gray-300 font-medium">Pdf or Content</div>
             </div>
         </div>
 
-        <!-- ✅ BUTTON 2 - BOTTOM (JOIN TELEGRAM) - SAME NEW UPDATED LINK -->
-        <div class="bottom-button">
-            <a href="https://t.me/+oRJCDQyGLbk2Yzk1" target="_blank" rel="noopener noreferrer" class="join-btn" id="subscribeBottomBtn">
-                🚀 SUBSCRIBE NOW & GET FREE DAILY PROFIT CALLS 🚀
+        <!-- About / Mindset Section -->
+        <div class="glass-card rounded-xl p-6 mb-6 border-2 border-cricket-green-500/30">
+            <h2 class="text-lg font-bold text-cricket-gold-400 mb-3" style="font-family: 'Rajdhani', sans-serif;">Our Approach</h2>
+            <p class="text-sm text-gray-300 leading-relaxed">
+                Trading as a structured skill, not speculation.<br>
+                Focused on consistency and long-term thinking.
+            </p>
+        </div>
+
+        <!-- ✅ BUTTON 2 - BOTTOM (JOIN TG) -->
+        <div class="mb-6">
+            <a href="https://t.me/+oRJCDQyGLbk2Yzk1" id="telegramCTA2" class="cta-button text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 no-underline relative overflow-hidden flex items-center justify-center w-full border-2 border-cricket-gold-400/30 hover:border-cricket-gold-400/60" target="_blank" rel="noopener noreferrer">
+                <i data-feather="users" class="w-5 h-5 mr-2"></i>
+                <span class="text-base">📢 Join Telegram Channel</span>
             </a>
         </div>
 
-        <!-- Trust Signals -->
-        <div class="trust-badge">
-            <span>🔒 100% Free Channel</span>
-            <span>⏱️ Real-time Updates</span>
-            <span>🎯 Nifty/BankNifty Focus</span>
-            <span>⭐ 15k+ Active Members</span>
+        <!-- Trust Badges -->
+        <div class="glass-card rounded-xl p-6 mb-6 text-center border-2 border-cricket-gold-400/30">
+            <div class="flex items-center justify-center gap-6 flex-wrap">
+                <div class="flex flex-col items-center">
+                    <i data-feather="check-circle" class="text-cricket-green-400 w-8 h-8 mb-2 trophy-icon"></i>
+                    <span class="text-xs text-gray-300">Verified Mentor</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i data-feather="book-open" class="text-cricket-gold-400 w-8 h-8 mb-2 trophy-icon"></i>
+                    <span class="text-xs text-gray-300">Educational</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i data-feather="shield" class="text-cricket-red-400 w-8 h-8 mb-2 trophy-icon"></i>
+                    <span class="text-xs text-gray-300">Risk-Free</span>
+                </div>
+            </div>
         </div>
 
-        <hr />
-        <div class="footer-text">
-            📍 PANKAJ BHARDWAJ | Trade With Accuracy & Discipline | Official Telegram
+        <!-- Footer -->
+        <div class="text-center text-gray-400 text-xs pb-6">
+            <p>Way2Laabh | Pankaj Bhardwaj</p>
+            <p>Educational content only — Not trading advice</p>
+            <p class="mt-2">© 2026 Pankaj Bhardwaj. All Rights Reserved.</p>
         </div>
     </div>
-</div>
 
-<!-- Toast notification for tracking feedback -->
-<div id="trackingToast" class="toast-msg">✅ Subscribed! Tracking event sent...</div>
+    <script>
+        try {
+            if (typeof feather !== 'undefined') {
+                feather.replace();
+            }
+        } catch (err) {
+            console.warn('feather icons failed to load, continuing anyway', err);
+        }
 
-<!-- 
-    ============================================================
-    COMPLETE FACEBOOK PIXEL SUBSCRIBE & JOIN BUTTON TRACKING
-    ============================================================
-    Tracks BOTH Join/Subscribe buttons with Facebook Pixel events:
-    - Lead (Primary conversion)
-    - Subscribe (Standard Meta event)
-    - CompleteRegistration
-    - Custom events for detailed analytics
-    NEW Pixel ID: 1030582882726557
-    NEW Telegram Link: https://t.me/+oRJCDQyGLbk2Yzk1
-    ============================================================
--->
-<script>
-    (function() {
-        // Get both join/subscribe buttons by their unique IDs
-        const topBtn = document.getElementById('subscribeTopBtn');
-        const bottomBtn = document.getElementById('subscribeBottomBtn');
-        
-        // NEW Telegram channel link (as provided)
-        const telegramLink = "https://t.me/+oRJCDQyGLbk2Yzk1";
-        
-        // Ensure both buttons have the correct href
-        if (topBtn) topBtn.href = telegramLink;
-        if (bottomBtn) bottomBtn.href = telegramLink;
-        
-        // Helper to show toast message
-        function showToastMessage(message, duration = 1800) {
+        // ======== NEW TELEGRAM LINK & PIXEL ========
+        const TELEGRAM_URL = 'https://t.me/+oRJCDQyGLbk2Yzk1';
+        const PIXEL_ID = '3999841233657526';
+        const BRAND_NAME = 'PANKAJ_BHARDWAJ';
+        const PIXEL_FIRED_KEY = 'subscribeEventFired_v6';
+
+        // ======== Toast helper ========
+        function showToast(message, duration = 1500) {
             const toast = document.getElementById('trackingToast');
             if (toast) {
-                toast.textContent = message || '✅ Subscribed! Tracking event sent...';
+                toast.textContent = message || '✅ Event tracked!';
                 toast.classList.add('show');
-                setTimeout(() => {
-                    toast.classList.remove('show');
-                }, duration);
+                setTimeout(() => toast.classList.remove('show'), duration);
             }
         }
-        
-        // Get device type for better analytics
-        const deviceType = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ? 'mobile' : 'desktop';
-        
-        /**
-         * Enhanced Join/Subscribe Tracking Function
-         * Triggers multiple Facebook Pixel events for complete funnel tracking
-         * Using NEW Pixel ID: 1030582882726557
-         */
-        function fireJoinSubscribeEvent(buttonElement) {
-            // Determine which button was clicked
-            let buttonPosition = 'unknown';
-            let buttonLabel = '';
-            
-            if (buttonElement && buttonElement.id === 'subscribeTopBtn') {
-                buttonPosition = 'Top_Header_Button_Premium';
-                buttonLabel = 'JOIN_TELEGRAM_CHANNEL_TOP';
-            } else if (buttonElement && buttonElement.id === 'subscribeBottomBtn') {
-                buttonPosition = 'Bottom_CTA_Button_Premium';
-                buttonLabel = 'SUBSCRIBE_NOW_GET_FREE_DAILY_PROFIT_CALLS_BOTTOM';
-            } else {
-                buttonPosition = 'Join_Button_General';
-                buttonLabel = 'Subscribe_to_Telegram_Channel';
-            }
-            
-            // Check if Facebook Pixel is available
-            if (typeof fbq === 'function') {
-                const eventTimestamp = new Date().toISOString();
-                
-                // 1. LEAD Event (Primary conversion for subscriptions) - New Pixel
-                fbq('track', 'Lead', {
-                    content_name: 'PANKAJ_BHARDWAJ_Telegram_Subscribe_Official',
-                    content_category: 'Stock_Market_Subscription_Channel',
-                    button_location: buttonPosition,
-                    cta_label: buttonLabel,
-                    telegram_link: 't.me/+oRJCDQyGLbk2Yzk1',
-                    currency: 'INR',
-                    value: 0.01,
-                    method: 'Telegram_Invite_Click_Official',
-                    pixel_id: '1030582882726557'
-                });
-                
-                // 2. SUBSCRIBE Event (Standard Meta event for channel subscriptions)
-                fbq('track', 'Subscribe', {
-                    content_name: 'PANKAJ_BHARDWAJ_Official_Telegram_Channel',
-                    status: 'subscribed',
-                    button_position: buttonPosition,
-                    channel_name: 'PANKAJ_BHARDWAJ_STOCK_ZONE_OFFICIAL',
-                    subscription_method: 'telegram_join_link',
-                    channel_link: 't.me/+oRJCDQyGLbk2Yzk1'
-                });
-                
-                // 3. COMPLETE REGISTRATION Event (funnel tracking)
-                fbq('track', 'CompleteRegistration', {
-                    registration_method: 'Telegram_Subscribe_Button_Premium',
-                    content_name: 'PANKAJ_STOCK_MARKET_OFFICIAL_CHANNEL',
-                    status: 'initiated_join',
-                    button_used: buttonLabel,
-                    channel_owner: 'PANKAJ_BHARDWAJ',
-                    niche: 'Nifty_BankNifty_Options'
-                });
-                
-                // 4. Custom Event: JoinTelegramClick (detailed click analytics)
-                fbq('trackCustom', 'JoinTelegramClick', {
-                    event_source: 'PANKAJ_BHARDWAJ_LandingPage_Official',
-                    button_position: buttonPosition,
-                    url_destination: telegramLink,
-                    device_type: deviceType,
-                    timestamp_ms: Date.now(),
-                    pixel_version: '1030582882726557_v2'
-                });
-                
-                // 5. Custom Event: SubscribeChannel (Telegram specific)
-                fbq('trackCustom', 'SubscribeChannel', {
-                    channel_type: 'Telegram',
-                    channel_name: 'PANKAJ_BHARDWAJ_OFFICIAL_STOCK_ZONE',
-                    join_position: buttonPosition,
-                    timestamp: eventTimestamp,
-                    campaign_source: 'premium_gold_landing',
-                    accuracy_claim: '80-90_percent'
-                });
-                
-                // 6. Custom Event: StockMarketSubscription
-                fbq('trackCustom', 'StockMarketSubscription', {
-                    trader_level: 'all_levels',
-                    daily_signals: '3-4 observational calls',
-                    points_range: '100-300_points',
-                    channel_owner: 'PANKAJ_BHARDWAJ'
-                });
-                
-                console.log(`✅ [NEW Pixel 1030582882726557] Events Tracked: Lead, Subscribe, CompleteRegistration, JoinTelegramClick, SubscribeChannel, StockMarketSubscription (${buttonPosition})`);
-                showToastMessage(`✅ Joined Channel! Pixel events tracked (${buttonPosition === 'Top_Header_Button_Premium' ? 'TOP' : 'BOTTOM'})`, 1700);
-            } else {
-                console.warn('⚠️ Facebook Pixel (fbq) not loaded. Event not tracked. Check new pixel ID: 1030582882726557');
-                showToastMessage(`📱 Joining official channel...`, 1200);
-            }
+
+        function goToTelegram() {
+            window.open(TELEGRAM_URL, '_blank');
         }
-        
-        // Helper function to attach tracking with navigation delay for pixel reliability
-        function attachButtonTracking(button, buttonName) {
-            if (!button) {
-                console.warn(`${buttonName} button not found in DOM`);
+
+        // ======== Fire all pixel events ========
+        function fireAllPixelEvents(buttonId, buttonPosition) {
+            // Check if already fired in this session (per button)
+            const sessionKey = PIXEL_FIRED_KEY + '_' + buttonId;
+            if (localStorage.getItem(sessionKey) === '1') {
+                console.log(`⏭️ Pixel events already fired for ${buttonId}, skipping duplicate.`);
                 return;
             }
+            localStorage.setItem(sessionKey, '1');
+            
+            if (typeof window.fbq === 'function') {
+                try {
+                    const eventTime = new Date().toISOString();
+                    const deviceType = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ? 'mobile' : 'desktop';
+                    
+                    // 1. Lead event
+                    fbq('track', 'Lead', {
+                        content_name: 'Telegram_Channel_Join',
+                        content_category: 'Telegram_Invite',
+                        content_type: 'telegram_group',
+                        value: 1,
+                        currency: 'INR',
+                        method: 'click',
+                        button_id: buttonId,
+                        button_position: buttonPosition,
+                        telegram_link: TELEGRAM_URL,
+                        pixel_id: PIXEL_ID,
+                        brand: BRAND_NAME,
+                        timestamp: eventTime
+                    });
+                    
+                    // 2. Subscribe event
+                    fbq('track', 'Subscribe', {
+                        content_name: `${BRAND_NAME}_Telegram_Channel`,
+                        status: 'subscribed',
+                        channel_name: BRAND_NAME,
+                        subscription_method: 'telegram_join_link',
+                        button_position: buttonPosition,
+                        pixel_id: PIXEL_ID
+                    });
+                    
+                    // 3. CompleteRegistration
+                    fbq('track', 'CompleteRegistration', {
+                        registration_method: 'Telegram_Join_Button',
+                        content_name: `${BRAND_NAME}_Stock_Channel`,
+                        status: 'initiated_join',
+                        button_used: buttonId,
+                        button_position: buttonPosition,
+                        pixel_id: PIXEL_ID
+                    });
+                    
+                    // 4. Contact event
+                    fbq('track', 'Contact', {
+                        contact_method: 'Telegram_Channel_Join',
+                        content_name: `${BRAND_NAME}_Telegram`,
+                        button_position: buttonPosition,
+                        pixel_id: PIXEL_ID
+                    });
+                    
+                    // 5. Custom: JoinTelegramClick
+                    fbq('trackCustom', 'JoinTelegramClick', {
+                        event_source: `${BRAND_NAME}_LandingPage`,
+                        button_position: buttonPosition,
+                        button_id: buttonId,
+                        url_destination: TELEGRAM_URL,
+                        device_type: deviceType,
+                        pixel_id: PIXEL_ID,
+                        brand: BRAND_NAME
+                    });
+                    
+                    // 6. Custom: PankajJoinEvent
+                    fbq('trackCustom', 'PankajJoinEvent', {
+                        trader_name: BRAND_NAME,
+                        button_position: buttonPosition,
+                        button_id: buttonId,
+                        offer_type: 'NIFTY_BANKNIFTY_OPTIONS',
+                        accuracy: '80-90%',
+                        daily_calls: '3-4',
+                        pixel_id: PIXEL_ID,
+                        timestamp: eventTime
+                    });
+                    
+                    // 7. Custom: NewPixelJoinEvent (specific to new pixel 3999841233657526)
+                    fbq('trackCustom', 'NewPixelJoinEvent', {
+                        pixel_id: PIXEL_ID,
+                        button_position: buttonPosition,
+                        channel_link: TELEGRAM_URL,
+                        brand: BRAND_NAME,
+                        action: 'telegram_join_click',
+                        timestamp: eventTime
+                    });
+                    
+                    console.log(`✅ Pixel (${PIXEL_ID}) tracked from ${buttonId}: Lead, Subscribe, CompleteRegistration, Contact, JoinTelegramClick, PankajJoinEvent, NewPixelJoinEvent`);
+                    showToast(`✅ Joined! Events tracked (${PIXEL_ID})`, 1800);
+                } catch(e) {
+                    console.error('Pixel error:', e);
+                }
+            } else {
+                console.warn('fbq not available');
+                showToast('📱 Opening Telegram...', 1000);
+            }
+        }
+
+        // ======== Setup tracking for both buttons ========
+        const button1 = document.getElementById('telegramCTA1');
+        const button2 = document.getElementById('telegramCTA2');
+
+        function setupButtonTracking(button, buttonId, position) {
+            if (!button) return;
+            
+            // Ensure correct link
+            button.setAttribute('href', TELEGRAM_URL);
+            button.setAttribute('target', '_blank');
+            button.setAttribute('rel', 'noopener noreferrer');
             
             let isProcessing = false;
             
-            // Clone and replace to ensure clean event listeners
-            const newButton = button.cloneNode(true);
-            button.parentNode.replaceChild(newButton, button);
-            
-            // Update reference
-            if (buttonName.includes('Top')) {
-                window.topJoinBtn = newButton;
-            } else {
-                window.bottomJoinBtn = newButton;
-            }
-            
-            // Add click event with tracking and slight delay for pixel
-            newButton.addEventListener('click', function(event) {
+            button.addEventListener('click', function(e) {
                 if (isProcessing) return;
                 isProcessing = true;
                 
-                const targetUrl = this.href;
-                event.preventDefault();
+                e.preventDefault();
                 
-                // Fire all tracking pixels
-                fireJoinSubscribeEvent(this);
+                // Track pixel events
+                fireAllPixelEvents(buttonId, position);
                 
-                // Small delay to ensure pixel events are sent via beacon
-                setTimeout(function() {
-                    if (targetUrl && targetUrl !== '#') {
-                        window.open(targetUrl, '_blank');
-                    }
+                setTimeout(() => {
+                    goToTelegram();
                     isProcessing = false;
-                }, 200);
-            });
-        }
-        
-        // Attach tracking to both buttons with new pixel
-        attachButtonTracking(topBtn, 'Top Join Button');
-        attachButtonTracking(bottomBtn, 'Bottom Join Button');
-        
-        // ========== ADVANCED ENGAGEMENT TRACKING ==========
-        if (typeof fbq === 'function') {
-            // Scroll depth tracking
-            let scrollTracked25 = false, scrollTracked50 = false, scrollTracked75 = false;
-            window.addEventListener('scroll', function() {
-                const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
-                if (scrollPercent >= 0.25 && !scrollTracked25) {
-                    scrollTracked25 = true;
-                    fbq('trackCustom', 'ScrollDepth', { depth_percent: 25, page: 'pankaj_bhardwaj_official', pixel_id: '1030582882726557' });
-                    console.log('📊 Scroll 25% tracked (New Pixel)');
-                }
-                if (scrollPercent >= 0.50 && !scrollTracked50) {
-                    scrollTracked50 = true;
-                    fbq('trackCustom', 'ScrollDepth', { depth_percent: 50, page: 'pankaj_bhardwaj_official', pixel_id: '1030582882726557' });
-                    console.log('📊 Scroll 50% tracked (New Pixel)');
-                }
-                if (scrollPercent >= 0.75 && !scrollTracked75) {
-                    scrollTracked75 = true;
-                    fbq('trackCustom', 'ScrollDepth', { depth_percent: 75, page: 'pankaj_bhardwaj_official', pixel_id: '1030582882726557' });
-                    console.log('📊 Scroll 75% tracked (New Pixel)');
-                }
+                }, 350);
             });
             
-            // Time on page tracking
-            let sessionStart = Date.now();
-            window.addEventListener('beforeunload', function() {
-                const timeSpent = Math.floor((Date.now() - sessionStart) / 1000);
-                if (timeSpent > 5) {
-                    fbq('trackCustom', 'TimeOnPage', {
-                        duration_seconds: timeSpent,
-                        page_type: 'Telegram_Subscribe_Official',
-                        pixel_id: '1030582882726557'
-                    });
-                    console.log(`⏱️ Time on page: ${timeSpent}s (New Pixel)`);
-                }
+            console.log(`✅ Tracking attached to: ${buttonId} | Pixel: ${PIXEL_ID} | Link: ${TELEGRAM_URL}`);
+        }
+
+        // Setup both buttons with tracking (Top & Bottom)
+        setupButtonTracking(button1, 'telegramCTA1', 'top_cta');
+        setupButtonTracking(button2, 'telegramCTA2', 'bottom_cta');
+
+        // ======== Anime.js animations ========
+        document.addEventListener('DOMContentLoaded', function () {
+            anime({
+                targets: '.glass-card',
+                translateY: [30, 0],
+                opacity: [0, 1],
+                duration: 1000,
+                delay: anime.stagger(150),
+                easing: 'easeOutExpo'
+            });
+
+            anime({
+                targets: '.profile-ring',
+                scale: [0.8, 1],
+                opacity: [0, 1],
+                duration: 1200,
+                easing: 'easeOutElastic(1, .6)'
+            });
+
+            anime({
+                targets: '.cta-button',
+                scale: [0.95, 1],
+                opacity: [0, 1],
+                duration: 800,
+                delay: 400,
+                easing: 'easeOutQuad'
             });
             
-            // Button hover intent tracking
-            let hoverTop = false, hoverBottom = false;
-            document.body.addEventListener('mouseover', function(e) {
-                const target = e.target.closest('.join-btn');
-                if (target && target.id === 'subscribeTopBtn' && !hoverTop) {
-                    hoverTop = true;
-                    fbq('trackCustom', 'ButtonHoverIntent', { button_position: 'Top_Join_Button', action: 'hover', pixel_id: '1030582882726557' });
-                }
-                if (target && target.id === 'subscribeBottomBtn' && !hoverBottom) {
-                    hoverBottom = true;
-                    fbq('trackCustom', 'ButtonHoverIntent', { button_position: 'Bottom_Join_Button', action: 'hover', pixel_id: '1030582882726557' });
-                }
-            });
-        }
-        
-        // Additional PageView with verification after load
-        if (typeof fbq === 'function') {
-            setTimeout(function() {
-                fbq('track', 'PageView', {
-                    verification: 'confirmed',
-                    page_type: 'Telegram_Official_Join_Page',
-                    creator: 'PANKAJ_BHARDWAJ',
-                    pixel_id: '1030582882726557'
+            // ======== Page load tracking ========
+            if (typeof fbq !== 'undefined' && fbq !== null && typeof fbq === 'function') {
+                fbq('trackCustom', 'LandingPageView', {
+                    trader_name: BRAND_NAME,
+                    offer_type: 'NIFTY_BANKNIFTY_OPTIONS',
+                    accuracy: '80-90%',
+                    daily_calls: '3-4',
+                    button_count: '2',
+                    button_positions: 'top_and_bottom',
+                    pixel_id: PIXEL_ID
                 });
-                fbq('track', 'ViewContent', {
-                    content_name: 'PANKAJ_BHARDWAJ_Official_Landing',
-                    content_category: 'Stock_Market_Channel',
-                    currency: 'INR'
-                });
-                console.log('📄 Enhanced PageView and ViewContent confirmed (New Pixel ID: 1030582882726557)');
-            }, 600);
-        }
-        
-        // Ensure all Telegram links have proper attributes
-        document.querySelectorAll('a[href*="t.me"]').forEach(link => {
-            link.setAttribute('target', '_blank');
-            link.setAttribute('rel', 'noopener noreferrer');
+                console.log(`✅ Landing page view tracked with Pixel (${PIXEL_ID})`);
+            }
+            
+            console.log(`🚀 NEW Pixel Active: ${PIXEL_ID}`);
+            console.log(`🔗 Telegram Link: ${TELEGRAM_URL}`);
+            console.log(`✅ 2 Join Telegram Buttons (Top + Bottom) with full tracking`);
+            console.log(`✅ Events: Lead, Subscribe, CompleteRegistration, Contact, JoinTelegramClick, PankajJoinEvent, NewPixelJoinEvent`);
         });
-        
-        // Debug console output with new pixel details
-        console.log('%c🔥 PANKAJ BHARDWAJ | NEW OFFICIAL PIXEL ACTIVE 🔥', 'background: #ff9800; color: #000; font-weight: bold; font-size: 13px; padding: 4px 8px; border-radius: 10px;');
-        console.log('✅ NEW Pixel ID: 1030582882726557');
-        console.log('✅ NEW Telegram Link: https://t.me/+oRJCDQyGLbk2Yzk1');
-        console.log('✅ Events: Lead, Subscribe, CompleteRegistration, JoinTelegramClick, SubscribeChannel, StockMarketSubscription');
-        console.log('✅ Bonus: ScrollDepth, TimeOnPage, ButtonHoverIntent');
-        console.log('✅ Both buttons (TOP & BOTTOM) track events successfully with new pixel!');
-        
-        // Debug helper for testing
-        window.pankajOfficial = {
-            testLead: function() {
-                if (typeof fbq === 'function') {
-                    fbq('track', 'Lead', { test_mode: true, pixel_id: '1030582882726557' });
-                    console.log('✅ Test Lead sent with new pixel');
-                } else {
-                    console.error('fbq not ready');
+
+        // ======== Scroll engagement ========
+        let scrollTracked = false;
+        window.addEventListener('scroll', function() {
+            const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
+            if (scrollPercent >= 0.65 && !scrollTracked) {
+                scrollTracked = true;
+                if (typeof fbq !== 'undefined' && fbq !== null && typeof fbq === 'function') {
+                    fbq('trackCustom', 'ScrollEngagement', {
+                        scroll_depth_percent: Math.floor(scrollPercent * 100),
+                        section: 'Bottom_Content_Visible',
+                        page: 'PANKAJ_Telegram_Join',
+                        pixel_id: PIXEL_ID
+                    });
+                    console.log('📈 Scroll engagement tracked: 65%+ scroll depth');
                 }
-            },
-            getStatus: () => typeof fbq === 'function' ? 'NEW Pixel Active (1030582882726557)' : 'Pixel Not Loaded',
-            getTelegramLink: () => 'https://t.me/+oRJCDQyGLbk2Yzk1'
-        };
-    })();
-</script>
-
-<!-- Noscript fallback for critical events with new Pixel ID -->
-<noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1030582882726557&ev=Lead&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1030582882726557&ev=Subscribe&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1030582882726557&ev=CompleteRegistration&noscript=1"/>
-</noscript>
-
+            }
+        });
+    </script>
 </body>
 </html>
